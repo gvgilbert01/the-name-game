@@ -468,6 +468,16 @@ async function reviewAnswer(answerId: string, status: "accepted" | "rejected") {
           </h1>
         </section>
 
+        <div className="mt-5 flex justify-center">
+  <button
+    type="button"
+    onClick={() => window.location.href = "/"}
+    className="rounded-full bg-slate-700 px-5 py-3 text-sm font-black tracking-wide text-white shadow-[0_6px_0_#334155] transition-all hover:translate-y-[2px] hover:shadow-[0_4px_0_#334155] active:translate-y-[3px] active:shadow-[0_3px_0_#334155]"
+  >
+    🚪 Exit Game
+  </button>
+</div>
+
         {message && !showReveal ? (
           <div className="rounded-2xl border border-cyan-200 bg-white p-4 text-center text-sm font-semibold text-cyan-700 shadow">
             {message}
